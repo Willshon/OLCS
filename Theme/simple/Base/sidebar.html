@@ -1,0 +1,46 @@
+<div class="col-xs-12 col-md-3 mt30 side hidden-xs ">
+
+    <div class="widget-box clearfix" style=" margin:3px; border-style:solid; border-color:#CC9900; text-align:center;">
+        <script type="text/javascript" charset="utf-8" src="__JS__/showtime.js"></script>
+    </div>
+
+    <div class="widget-box clearfix">
+        <h2 class="h4 widget-box__title">分类列表({$clistnum})</h2>
+        <div class="pcss3mm ">
+            <ul id="pcss3mm" class="nav nav-pills" role="tablist">
+                {$catehtml}
+            </ul>
+        </div>
+    </div>
+
+    <div class="widget-box clearfix">
+        <h2 class="h4 widget-box__title">最近用户</h2>
+        <ul class="list-unstyled list-unstyled">
+            <member:list name="vo" row="15" order="score desc" limit="true">
+                <li class="widget-user media">
+                    <a class="pull-left" href="{$vo.user.space_url}">
+                        <img class="media-object avatar-40" src="{$vo.user.avatar64}" alt="{$vo.user.nickname}" title="{$vo.user.nickname}">
+                    </a>
+                </li>
+            </member:list>
+        </ul>
+    </div>
+
+    <div class="widget-box no-border">
+        <h2 class="h4 widget-box__title">最新公告</h2>
+        <ul class="widget-links list-unstyled">
+            <article:list name="vo" cate="0" status="1" row="5" order="view desc" limit="true">
+                <li class="widget-links__item">
+                    <a href="{:CSU('/artc/'.$vo['id'],'Index/artc',array('id'=>$vo['id']))}" title="{$vo.title}">{$vo.title|cutstr_html=20}</a>
+                    <small class="text-muted">
+                        {$vo.sccount} 收藏，
+                        {$vo.view} 浏览
+                    </small>
+                </li>
+            </article:list>
+        </ul>
+    </div>
+
+    {:hook('Advs', 'below_sidebar')}
+
+</div><!-- /.layout-sidebar -->

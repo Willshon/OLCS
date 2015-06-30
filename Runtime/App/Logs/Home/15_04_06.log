@@ -1,0 +1,282 @@
+[ 2015-04-06T17:02:27+08:00 ] ::1 /cs/index.php?m=Home&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.344201s ]
+INFO: [ app_init ] --END-- [ RunTime:0.640601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031200s ]
+SQL: SHOW COLUMNS FROM `cs_config` [ RunTime:2.2464s ]
+SQL: SELECT `type`,`name`,`value` FROM `cs_config` WHERE `status` = 1  [ RunTime:0.1560s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.1872s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\CS\App\Home\Model\MemberModel.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `cs_user_token` [ RunTime:0.1404s ]
+SQL: SELECT * FROM `cs_user_token` WHERE `uid` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\CS\App\Home\Model\MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\CS\App\Home\Model\MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined index: cs_home D:\xampp\htdocs\CS\App\Home\Controller\HomeController.class.php 第 29 行.
+NOTIC: [8] Undefined index: cs_home D:\xampp\htdocs\CS\App\Home\Controller\HomeController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0468s ]
+SQL: SELECT `score` FROM `cs_member` WHERE `uid` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: cs_home D:\xampp\htdocs\CS\App\Home\Controller\HomeController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `cs_message` [ RunTime:0.4212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_message` WHERE `status` = 1 AND `is_read` = 0 AND `to_uid` = null LIMIT 1   [ RunTime:0.1248s ]
+NOTIC: [8] Undefined index: cs_home D:\xampp\htdocs\CS\App\Home\Controller\HomeController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:0.2808s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.1716s ]
+NOTIC: [8] Undefined index: zs_home D:\xampp\htdocs\CS\App\Common\Common\user.php 第 472 行.
+NOTIC: [8] Undefined variable: nb D:\xampp\htdocs\CS\App\Common\Api\CategoryApi.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cs_cate` [ RunTime:0.2028s ]
+SQL: SELECT * FROM `cs_cate` WHERE `pid` = 0 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0312s ]
+SQL: SELECT * FROM `cs_cate` WHERE `pid` = 2 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_cate` WHERE `pid` = 1 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_cate` WHERE `type` = 1 AND `enable` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_cate` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cs_cate` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_cate` [ RunTime:0.0000s ]
+SQL: SELECT *,CONCAT(spid,id) as path2 FROM `cs_cate` WHERE `type` = 1 AND `status` = 1 ORDER BY path2  [ RunTime:0.1560s ]
+SQL: SHOW COLUMNS FROM `cs_nav` [ RunTime:0.2028s ]
+SQL: SELECT * FROM `cs_nav` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\CS\App\Common\Common\function.php 第 144 行.
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\CS\App\Common\Common\function.php 第 144 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_cate` WHERE `type` = 1 AND `pid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `cs_cate` WHERE `type` = 1 AND `pid` = 0 AND `status` = 1 ORDER BY id asc LIMIT 2   [ RunTime:0.0000s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.109200s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.109200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: webdescription D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 10 行.
+NOTIC: [8] Undefined variable: webdescription D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 10 行.
+NOTIC: [8] Undefined variable: webkeyword D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 12 行.
+NOTIC: [8] Undefined variable: webkeyword D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 12 行.
+NOTIC: [8] Undefined variable: webtitle D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 14 行.
+NOTIC: [8] Undefined variable: webtitle D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 14 行.
+NOTIC: [8] Undefined variable: zswinerror D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 47 行.
+NOTIC: [8] Undefined variable: jumpUrl D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 48 行.
+NOTIC: [8] Undefined variable: error D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 49 行.
+NOTIC: [8] Undefined variable: waitSecond D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 49 行.
+NOTIC: [8] Undefined index: keyword D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 110 行.
+SQL: SELECT `type`,`name`,`value` FROM `cs_config` WHERE `status` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: lite D:\xampp\htdocs\CS\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+NOTIC: [8] Undefined variable: isInternalCall D:\xampp\htdocs\CS\App\Api\Controller\ApiController.class.php 第 33 行.
+SQL: SELECT * FROM `cs_member` WHERE `status` = 1 ORDER BY score desc LIMIT 15   [ RunTime:0.0936s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0156s ]
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.2652s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 502 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 502 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 502 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 503 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 503 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 503 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 504 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 504 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 504 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 505 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 505 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 505 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 506 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 506 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 506 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+NOTIC: [8] Undefined index: format D:\xampp\htdocs\CS\App\Api\Controller\ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cs_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: isInternalCall D:\xampp\htdocs\CS\App\Api\Controller\ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cs_article` [ RunTime:0.1560s ]
+SQL: SHOW COLUMNS FROM `cs_cate` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: array D:\xampp\htdocs\CS\App\Home\Model\CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cs_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: _ D:\xampp\htdocs\CS\App\Home\Model\CateModel.class.php 第 23 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\CS\App\Home\Model\CateModel.class.php 第 23 行.
+NOTIC: [8] Undefined index: _ D:\xampp\htdocs\CS\App\Home\Model\CateModel.class.php 第 23 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\CS\App\Home\Model\CateModel.class.php 第 23 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_article` WHERE `cid` IN ('1','2') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0468s ]
+SQL: SELECT * FROM `cs_article` WHERE `cid` IN ('1','2') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_article` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT * FROM `cs_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+NOTIC: [8] Undefined index: format D:\xampp\htdocs\CS\App\Api\Controller\ApiController.class.php 第 62 行.
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 177 行.
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.1162s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+NOTIC: [2] include(): Filename cannot be empty D:\xampp\htdocs\CS\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.;D:\xampp\php\PEAR') D:\xampp\htdocs\CS\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2015-04-06T20:36:40+08:00 ] ::1 /cs/index.php?m=Home&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.364021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.793046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.043003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.043003s ]
+SQL: SHOW COLUMNS FROM `cs_config` [ RunTime:2.5011s ]
+SQL: SELECT `type`,`name`,`value` FROM `cs_config` WHERE `status` = 1  [ RunTime:0.2920s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0750s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\CS\App\Home\Model\MemberModel.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `cs_user_token` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `cs_user_token` WHERE `uid` = null LIMIT 1   [ RunTime:0.0370s ]
+NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\CS\App\Home\Model\MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\CS\App\Home\Model\MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined index: cs_home D:\xampp\htdocs\CS\App\Home\Controller\HomeController.class.php 第 29 行.
+NOTIC: [8] Undefined index: cs_home D:\xampp\htdocs\CS\App\Home\Controller\HomeController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0080s ]
+SQL: SELECT `score` FROM `cs_member` WHERE `uid` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: cs_home D:\xampp\htdocs\CS\App\Home\Controller\HomeController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `cs_message` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_message` WHERE `status` = 1 AND `is_read` = 0 AND `to_uid` = null LIMIT 1   [ RunTime:0.1490s ]
+NOTIC: [8] Undefined index: cs_home D:\xampp\htdocs\CS\App\Home\Controller\HomeController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:0.0090s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.1060s ]
+NOTIC: [8] Undefined index: zs_home D:\xampp\htdocs\CS\App\Common\Common\user.php 第 472 行.
+NOTIC: [8] Undefined variable: nb D:\xampp\htdocs\CS\App\Common\Api\CategoryApi.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cs_cate` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `cs_cate` WHERE `pid` = 0 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.1130s ]
+SQL: SELECT * FROM `cs_cate` WHERE `pid` = 2 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cs_cate` WHERE `pid` = 1 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_cate` WHERE `type` = 1 AND `enable` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_cate` [ RunTime:0.1030s ]
+SQL: SELECT * FROM `cs_cate` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_cate` [ RunTime:0.0060s ]
+SQL: SELECT *,CONCAT(spid,id) as path2 FROM `cs_cate` WHERE `type` = 1 AND `status` = 1 ORDER BY path2  [ RunTime:0.0900s ]
+SQL: SHOW COLUMNS FROM `cs_nav` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `cs_nav` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0260s ]
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\CS\App\Common\Common\function.php 第 144 行.
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\CS\App\Common\Common\function.php 第 144 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_cate` WHERE `type` = 1 AND `pid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `cs_cate` WHERE `type` = 1 AND `pid` = 0 AND `status` = 1 ORDER BY id asc LIMIT 2   [ RunTime:0.0340s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.125007s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.125007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: webdescription D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 10 行.
+NOTIC: [8] Undefined variable: webdescription D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 10 行.
+NOTIC: [8] Undefined variable: webkeyword D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 12 行.
+NOTIC: [8] Undefined variable: webkeyword D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 12 行.
+NOTIC: [8] Undefined variable: webtitle D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 14 行.
+NOTIC: [8] Undefined variable: webtitle D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 14 行.
+NOTIC: [8] Undefined variable: zswinerror D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 47 行.
+NOTIC: [8] Undefined variable: jumpUrl D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 48 行.
+NOTIC: [8] Undefined variable: error D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 49 行.
+NOTIC: [8] Undefined variable: waitSecond D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 49 行.
+NOTIC: [8] Undefined index: keyword D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 110 行.
+SQL: SELECT `type`,`name`,`value` FROM `cs_config` WHERE `status` = 1  [ RunTime:0.0320s ]
+NOTIC: [8] Undefined index: lite D:\xampp\htdocs\CS\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+NOTIC: [8] Undefined variable: isInternalCall D:\xampp\htdocs\CS\App\Api\Controller\ApiController.class.php 第 33 行.
+SQL: SELECT * FROM `cs_member` WHERE `status` = 1 ORDER BY score desc LIMIT 15   [ RunTime:0.2280s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0060s ]
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 502 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 502 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 502 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 503 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 503 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 503 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 504 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 504 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 504 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 505 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 505 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 505 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT `nickname`,`score` FROM `cs_member` WHERE `uid` = 506 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 506 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 506 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+NOTIC: [8] Undefined index: format D:\xampp\htdocs\CS\App\Api\Controller\ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cs_config` WHERE `status` = 1  [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: isInternalCall D:\xampp\htdocs\CS\App\Api\Controller\ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cs_article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `cs_cate` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: array D:\xampp\htdocs\CS\App\Home\Model\CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cs_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: _ D:\xampp\htdocs\CS\App\Home\Model\CateModel.class.php 第 23 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\CS\App\Home\Model\CateModel.class.php 第 23 行.
+NOTIC: [8] Undefined index: _ D:\xampp\htdocs\CS\App\Home\Model\CateModel.class.php 第 23 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\CS\App\Home\Model\CateModel.class.php 第 23 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_article` WHERE `cid` IN ('1','2') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0990s ]
+SQL: SELECT * FROM `cs_article` WHERE `cid` IN ('1','2') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_article` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `cs_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SELECT * FROM `cs_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+NOTIC: [8] Undefined index: format D:\xampp\htdocs\CS\App\Api\Controller\ApiController.class.php 第 62 行.
+NOTIC: [8] Undefined index: uid D:\xampp\htdocs\CS\Runtime\App\Cache\Home\c8193c7dc36f9097ea0a2eb8a35d2b4d.php 第 177 行.
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.1020s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+NOTIC: [2] include(): Filename cannot be empty D:\xampp\htdocs\CS\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening '' for inclusion (include_path='.;D:\xampp\php\PEAR') D:\xampp\htdocs\CS\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+

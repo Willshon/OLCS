@@ -1,0 +1,258 @@
+[ 2015-04-17T14:09:31+08:00 ] ::1 /cs/index.php/Admin/Index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.079004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.108006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:0.5840s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.1450s ]
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.0930s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 1 [ RunTime:0.1230s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 504 [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user` WHERE ( role_id=4 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_teacher` [ RunTime:0.1030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_teacher` WHERE `id` = 504 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT `user_id` FROM `cs_mrole_user` WHERE ( role_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_student` [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 502 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 505 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `cs_faculty` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `cs_subject` [ RunTime:0.1130s ]
+SQL: SELECT * FROM `cs_subject` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_course` [ RunTime:0.1470s ]
+SQL: SELECT * FROM `cs_course` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_teacher` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+
+[ 2015-04-17T14:09:32+08:00 ] ::1 /cs/index.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cs_config` [ RunTime:0.1760s ]
+SQL: SELECT `value` FROM `cs_config` WHERE `name` = 'VERIFY_OPEN' LIMIT 1   [ RunTime:0.0315s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.033000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.033000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\7c89c4e03b5756e9b4543663c7c8599d.php 第 171 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.279506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.279506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.060501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.060501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.030500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030500s ]
+
+[ 2015-04-17T14:09:41+08:00 ] ::1 /cs/index.php?m=Admin&c=Public&a=Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cs_config` [ RunTime:0.0100s ]
+SQL: SELECT `value` FROM `cs_config` WHERE `name` = 'VERIFY_OPEN' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: lite D:\xampp\htdocs\CS\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.7450s ]
+SQL: SELECT `uid`,`nickname`,`name`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`signature`,`tox_money`,`pos_province`,`pos_city`,`pos_district`,`pos_community` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cs_member` SET `login`=`login`+1,`last_login_time`='1429250978',`last_login_ip`='0' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_syslogs` [ RunTime:0.5230s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.1550s ]
+SQL: SELECT `title` FROM `cs_node` WHERE `name` = 'Login' AND `level` = 3 LIMIT 1   [ RunTime:0.0750s ]
+NOTIC: [8] Undefined index: zs_admin D:\xampp\htdocs\CS\App\Admin\Controller\PublicController.class.php 第 58 行.
+SQL: INSERT INTO `cs_syslogs` (`modulename`,`actionname`,`opname`,`message`,`userid`,`userip`,`create_time`) VALUES ('公共模块','Login','用户登录','成功','1','0.0.0.0','1429250981') [ RunTime:0.1570s ]
+
+[ 2015-04-17T14:09:43+08:00 ] ::1 /cs/index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.0100s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 1 [ RunTime:0.0000s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 504 [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user` WHERE ( role_id=4 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_teacher` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_teacher` WHERE `id` = 504 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_mrole_user` WHERE ( role_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_student` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 502 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 505 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cs_faculty` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_subject` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `cs_subject` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_course` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_course` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_teacher` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.1440s ]
+SQL: SELECT * FROM `cs_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cs_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `cs_addons` [ RunTime:0.1660s ]
+SQL: SELECT `title`,`name` FROM `cs_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.0990s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SHOW COLUMNS FROM `cs_article` [ RunTime:0.0990s ]
+SQL: SELECT SUM(view) AS tp_sum FROM `cs_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0780s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_syslogs` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `cs_syslogs` ORDER BY id desc LIMIT 10   [ RunTime:0.0250s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-17T14:09:46+08:00 ] ::1 /cs/index.php?m=Admin&c=Faculty&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:0.0100s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.0050s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 1 [ RunTime:0.0000s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 504 [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user` WHERE ( role_id=4 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_teacher` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_teacher` WHERE `id` = 504 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_mrole_user` WHERE ( role_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_student` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 502 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 505 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cs_faculty` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_subject` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cs_subject` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cs_course` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cs_course` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cs_teacher` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cs_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cs_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cs_addons` [ RunTime:0.0025s ]
+SQL: SELECT `title`,`name` FROM `cs_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cs_node` WHERE `remark` = 'index' AND `name` = 'Faculty' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_node` WHERE `level` = 2 AND `name` = 'Faculty' AND `remark` = '' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`title` FROM `cs_group`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0025s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: name D:\xampp\htdocs\CS\App\Admin\Controller\FacultyController.class.php 第 9 行.
+SQL: SELECT * FROM `cs_faculty` WHERE `name` LIKE '%%'  [ RunTime:0.0000s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 55 行.
+NOTIC: [8] Undefined index: name D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\e6fe5b6e81bc20f1f4a8ea0e17052a5d.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

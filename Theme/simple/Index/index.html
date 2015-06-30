@@ -1,0 +1,61 @@
+<extend name="Base/common"/>
+
+<block name="right">
+
+<div class="col-xs-12 col-md-9 main">
+    <p class="main-title hidden-xs"></p>
+    <div class="main__board panel panel-default panel-body">
+        <div class="main-title hidden-xs post-title yahei">&nbsp;&nbsp;&nbsp;&nbsp;欢迎您使用网上选课系统!</div>
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3 class="panel-title">账号信息</h3></div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label x80">所属角色：</label>
+                        <span>{$userinfo.uid|getMroleNameByUserId}</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label x80">登陆账号：</label>
+                        <span>{$userinfo.username}</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label x80">注册时间：</label>
+                        <span>{:date("Y-m-d H:i:s",$userinfo['reg_time'])}</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label x80">上次登陆：</label>
+                        <span>{:date("Y-m-d H:i:s",$userinfo['last_login_time'])}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3 class="panel-title">用户信息</h3></div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label x80">昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</label>
+                        <span>{$userinfo.nickname}</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label x80">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label>
+                        <span>{$userinfo.uid|getNameById='student',###}</span>
+                    </div>
+                     <div class="form-group">
+                        <label class="control-label x80">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>
+                        <span>{$userinfo.email}</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label x80">个性签名：</label>
+                        <span>{$userinfo.signature}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.main__board -->
+
+</div><!-- /.main -->
+
+</block>

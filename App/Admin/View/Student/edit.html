@@ -1,0 +1,59 @@
+<form action="__URL__/update" id="j_custom_form" class="col-md-12 form-label-right center-margin  form-validate" method="post" noEnter>
+
+    <input type="hidden" name='id' value="{$info.id}" />
+    <div class="pageContainer">
+      <div class="form-row">
+          <div class="form-label col-md-3"><label>学号：</label></div>
+          <div class="form-input col-md-7">
+            <input type="text" class="validate[required,custom[onlyLetterNumber],minSize[10]] required" size="30" name="no" id="j_no" value="{$info.no}"  >
+          </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label col-md-3"><label>姓名：</label></div>
+        <div class="form-input col-md-7">
+          <input type="text" class="validate[required] required" size="30" name="name" id="j_name" value="{$info.name}" >
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label col-md-3"><label>专业：</label></div>
+        <div class="form-input col-md-7">
+            <select name="subid" data-container="body" id="j_subid" class="selectpicker show-tick validate[required]" data-style="bg-orange btn medium" data-width="auto">
+                <volist name='subject' id='vo'>
+                    <option value="{$vo.id}" <eq name="vo.id" value="$info.subid" >selected</eq>>{$vo.name}</option>
+                </volist>
+            </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label col-md-3"><label>辅导员：</label></div>
+        <div class="form-input col-md-7">
+          <input type="text" class="validate[required] required" size="30" name="fudaoyuan" id="j_fudaoyuan" value="{$info.fudaoyuan}" >
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label col-md-3"><label>入学时间：</label></div>
+        <div class="form-input col-md-7">
+          <input type="text" size="30" name="rxsj" id="j_rxsj" value="{$info.rxsj}" >
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label col-md-3"><label>毕业时间：</label></div>
+        <div class="form-input col-md-7">
+          <input type="text" size="30" name="bysj" id="j_bysj" value="{$info.bysj}" >
+        </div>
+      </div>
+
+      <div class="actionBar">
+          <div class="form-input col-md-10 col-md-offset-3">
+              <button type="button" class="btn medium bg-blue xubox_yes"> <span class="button-content">确定</span></button>
+              <button type="button" class="btn medium bg-red mrg15L xubox_close"><span class="button-content">取消</span></button>
+          </div>
+      </div>
+
+    </div>
+</form>

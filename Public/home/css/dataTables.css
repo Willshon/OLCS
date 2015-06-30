@@ -1,0 +1,175 @@
+	/* Default */
+
+.table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	border-right: 0 !important;
+}
+
+.table td {
+	padding: 8px;
+	vertical-align: middle;
+}
+
+.table th {
+	padding: 0 8px;
+	height: 36px;
+	line-height: 36px;
+	position: relative;
+}
+
+.table tfoot th {
+	border-bottom: 0;
+}
+
+.table tbody tr:last-child th,
+.table tbody tr:last-child td {
+	border-bottom: 0;
+}
+
+	/* Condensed */
+
+.table-condensed td {
+	padding: 3px 5px;
+}
+
+.table-condensed th {
+	height: 24px;
+	line-height: 24px;
+}
+
+	/* Striped */
+
+.table-striped tr:nth-child(even) > td {
+	background: #fafafa;
+}
+
+	/* Hover */
+
+.table-hover tr:hover td {
+	background: #fffdf4;
+	color: #000;
+}
+
+/* Data Tables */
+table.dataTable thead
+{
+	background-color: #E4E9F0;
+    color: #57697E;
+    height: 30px;
+    line-height: 36px;
+}
+table.dataTable thead th:hover
+{
+	 color: #000;
+}
+.text-left {
+    text-align: left !important;
+}
+table.dataTable td, table.dataTable th {
+    border-right: 1px solid #C1CAD5;
+    border-bottom: 1px solid #C1CAD5;
+}
+
+table.dataTable td {
+    padding: 8px;
+    vertical-align: middle;
+}
+table.dataTable tbody tr.even {
+    background: none repeat scroll 0% 0% #FAFAFA;
+    background-color: #FAFAFA;
+}
+
+
+.ui-toolbar {
+	padding: 10px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.ui-toolbar select,
+.ui-toolbar input {
+	width: auto;
+	margin: 0 5px;
+}
+
+.dataTable {
+	margin: 0 !important;
+	border-radius: 3px;
+}
+.dataTables_length{
+	float: left;
+}
+.dataTables_filter,
+.dataTables_paginate {
+	float: right;
+}
+.dataTable .css_right {
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 14px;
+	top: 50%;
+	position: absolute;
+	right: -12px;
+	margin-top: -8px;
+	color: rgba(0,0,0,0.8);
+}
+
+.dataTable th:hover .css_right {
+	color: rgba(0,0,0,1);
+}
+
+.dataTable .icon-sort {
+	color: rgba(0,0,0,0.5);
+}
+
+.dataTable .even {
+	background: #fafafa;
+}
+
+	/* Data Table Pagination */
+
+.dataTables_paginate a {
+position: relative;
+float: left;
+padding: 6px 12px;
+margin-left: -1px;
+line-height: 1.42857143;
+color: #428bca;
+text-decoration: none;
+background-color: #fff;
+border: 1px solid #ddd;
+
+}
+.ui-tabs, .ui-accordion, .table, .content-box-alt, .ui-dialog, .ui-datepicker, .chosen-drop {
+    border-radius: 3px;
+    border: 1px solid #C1CAD5;
+    position: relative;
+    background: none repeat scroll 0% 0% #FFF;
+}
+.ui-state-disabled, .disabled, button[disabled], .chosen-disabled {
+    cursor: not-allowed !important;
+    opacity: 0.7;
+}
+.btn:hover, .btn:focus, .btn.focus {
+    color: #eee;
+}
+.form-label, .form-input, .form-checkbox-radio {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+}
+.btn.bg-white.hover-orange:hover, .hover-orange:hover, .bg-orange {
+    color: #FFF;
+    background: none repeat scroll 0% 0% #FA7753;
+}
+.hover-blue:hover, .bg-blue {
+    color: #FFF;
+    background: none repeat scroll 0% 0% #5BCCF6;
+}
+.hover-green:hover, .bg-green {
+    color: #FFF;
+    background: none repeat scroll 0% 0% #9CD159;
+}

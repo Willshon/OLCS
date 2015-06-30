@@ -1,0 +1,739 @@
+[ 2015-04-01T10:52:00+08:00 ] ::1 /cs/index.php?m=Admin&c=Addons&a=adminList&name=Avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.468000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.873601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031200s ]
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:1.9832s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.1092s ]
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.2808s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 1 [ RunTime:0.1716s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 504 [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user` WHERE ( role_id=4 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_teacher` [ RunTime:0.2194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_teacher` WHERE `id` = 504 LIMIT 1   [ RunTime:0.0624s ]
+SQL: SELECT `user_id` FROM `cs_mrole_user` WHERE ( role_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_student` [ RunTime:0.3744s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 502 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 505 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.1716s ]
+SQL: SELECT * FROM `cs_faculty` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `cs_subject` [ RunTime:0.3754s ]
+SQL: SELECT * FROM `cs_subject` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_course` [ RunTime:0.1092s ]
+SQL: SELECT * FROM `cs_course` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_teacher` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.1404s ]
+SQL: SELECT * FROM `cs_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.4534s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cs_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.1092s ]
+SQL: SHOW COLUMNS FROM `cs_addons` [ RunTime:0.3120s ]
+SQL: SELECT `title`,`name` FROM `cs_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_node` WHERE `remark` = 'adminList' AND `name` = 'Addons' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `cs_node` WHERE `name` = 'Addons' AND `remark` = '' AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_node` WHERE `level` = 3 AND `name` = 'adminList' AND `pid` = 118 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_node` WHERE `id` = 118 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.1404s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0780s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.1560s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar`  [ RunTime:0.0000s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.406601s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.406601s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.827802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.827802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.031200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031200s ]
+
+[ 2015-04-01T12:03:22+08:00 ] ::1 /cs/index.php?m=Admin&c=Addons&a=adminList&name=Avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.046800s ]
+INFO: [ app_init ] --END-- [ RunTime:0.187200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:0.7020s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0936s ]
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.0780s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 1 [ RunTime:0.1248s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 504 [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user` WHERE ( role_id=4 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_teacher` [ RunTime:0.1248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_teacher` WHERE `id` = 504 LIMIT 1   [ RunTime:0.1716s ]
+SQL: SELECT `user_id` FROM `cs_mrole_user` WHERE ( role_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_student` [ RunTime:0.0936s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 502 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 505 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.1092s ]
+SQL: SELECT * FROM `cs_faculty` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cs_subject` [ RunTime:0.2496s ]
+SQL: SELECT * FROM `cs_subject` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_course` [ RunTime:0.2184s ]
+SQL: SELECT * FROM `cs_course` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cs_teacher` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.1092s ]
+SQL: SELECT * FROM `cs_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0936s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cs_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `cs_addons` [ RunTime:0.0780s ]
+SQL: SELECT `title`,`name` FROM `cs_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_node` WHERE `remark` = 'adminList' AND `name` = 'Addons' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `cs_node` WHERE `name` = 'Addons' AND `remark` = '' AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_node` WHERE `level` = 3 AND `name` = 'adminList' AND `pid` = 118 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_node` WHERE `id` = 118 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0624s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.1092s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.1092s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar`  [ RunTime:0.0000s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-01T13:16:27+08:00 ] ::1 /cs/index.php?m=Admin&c=Addons&a=adminList&name=Avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:0.0250s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.0050s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 1 [ RunTime:0.0010s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 504 [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cs_role_user` WHERE ( role_id=4 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_teacher` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_teacher` WHERE `id` = 504 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cs_mrole_user` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_student` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 502 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 505 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cs_faculty` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_subject` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cs_subject` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cs_course` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cs_teacher` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cs_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cs_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cs_addons` [ RunTime:0.0110s ]
+SQL: SELECT `title`,`name` FROM `cs_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cs_node` WHERE `remark` = 'adminList' AND `name` = 'Addons' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `cs_node` WHERE `name` = 'Addons' AND `remark` = '' AND `level` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_node` WHERE `level` = 3 AND `name` = 'adminList' AND `pid` = 118 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cs_node` WHERE `id` = 118 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0080s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar`  [ RunTime:0.0010s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.002001s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-01T21:38:12+08:00 ] ::1 /cs/index.php?m=Admin&c=Addons&a=adminList&name=Avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.398023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.673039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:1.6391s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.3490s ]
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.3350s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 1 [ RunTime:0.2470s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 504 [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cs_role_user` WHERE ( role_id=4 )  [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `cs_teacher` [ RunTime:0.1460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_teacher` WHERE `id` = 504 LIMIT 1   [ RunTime:0.1130s ]
+SQL: SELECT `user_id` FROM `cs_mrole_user` WHERE ( role_id=1 )  [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `cs_student` [ RunTime:0.1540s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 502 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 505 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.1330s ]
+SQL: SELECT * FROM `cs_faculty` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.0800s ]
+SQL: SHOW COLUMNS FROM `cs_subject` [ RunTime:0.3820s ]
+SQL: SELECT * FROM `cs_subject` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_course` [ RunTime:0.1510s ]
+SQL: SELECT * FROM `cs_course` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_teacher` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.2040s ]
+SQL: SELECT * FROM `cs_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.2190s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cs_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.1150s ]
+SQL: SHOW COLUMNS FROM `cs_addons` [ RunTime:0.1340s ]
+SQL: SELECT `title`,`name` FROM `cs_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cs_node` WHERE `remark` = 'adminList' AND `name` = 'Addons' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `cs_node` WHERE `name` = 'Addons' AND `remark` = '' AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_node` WHERE `level` = 3 AND `name` = 'adminList' AND `pid` = 118 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_node` WHERE `id` = 118 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0030s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SELECT * FROM `cs_avatar`  [ RunTime:0.0000s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.057003s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.057003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\548677b53dd7e72a3f0af2bec0ac71df.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.452026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.452026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.037003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.037003s ]
+
+[ 2015-04-01T22:18:54+08:00 ] ::1 /cs/index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.0030s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 1 [ RunTime:0.0000s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 504 [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cs_role_user` WHERE ( role_id=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_teacher` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_teacher` WHERE `id` = 504 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cs_mrole_user` WHERE ( role_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_student` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 502 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 505 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cs_faculty` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_subject` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cs_subject` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_course` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cs_course` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_teacher` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cs_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cs_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cs_addons` [ RunTime:0.0040s ]
+SQL: SELECT `title`,`name` FROM `cs_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0020s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SHOW COLUMNS FROM `cs_article` [ RunTime:0.0040s ]
+SQL: SELECT SUM(view) AS tp_sum FROM `cs_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_syslogs` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `cs_syslogs` ORDER BY id desc LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 55 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-01T22:21:50+08:00 ] ::1 /cs/index.php?m=Admin&c=Message&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.0040s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 1 [ RunTime:0.0010s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 504 [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user` WHERE ( role_id=4 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_teacher` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_teacher` WHERE `id` = 504 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cs_mrole_user` WHERE ( role_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_student` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 502 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 505 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cs_faculty` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_subject` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cs_subject` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_course` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cs_course` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cs_teacher` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cs_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cs_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_addons` [ RunTime:0.0050s ]
+SQL: SELECT `title`,`name` FROM `cs_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cs_node` WHERE `remark` = 'index' AND `name` = 'Message' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_node` WHERE `level` = 2 AND `name` = 'Message' AND `remark` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title` FROM `cs_group`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0030s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SHOW COLUMNS FROM `cs_message` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cs_message`  [ RunTime:0.0150s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.002000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\96996695b76e99542ec442de76d88c86.php 第 55 行.
+NOTIC: [8] Undefined index: zs_home D:\xampp\htdocs\CS\App\Common\Common\user.php 第 440 行.
+NOTIC: [8] Undefined index: lite D:\xampp\htdocs\CS\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+NOTIC: [8] Undefined index: zs_home D:\xampp\htdocs\CS\App\Common\Common\user.php 第 440 行.
+NOTIC: [8] Undefined index: zs_home D:\xampp\htdocs\CS\App\Common\Common\user.php 第 440 行.
+NOTIC: [8] Undefined index: zs_home D:\xampp\htdocs\CS\App\Common\Common\user.php 第 440 行.
+NOTIC: [8] Undefined index: zs_home D:\xampp\htdocs\CS\App\Common\Common\user.php 第 440 行.
+NOTIC: [8] Undefined index: zs_home D:\xampp\htdocs\CS\App\Common\Common\user.php 第 440 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-04-01T22:22:12+08:00 ] ::1 /cs/index.php?m=Admin&c=Tags&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.0030s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 1 [ RunTime:0.0000s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 504 [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user` WHERE ( role_id=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_teacher` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_teacher` WHERE `id` = 504 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cs_mrole_user` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cs_student` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 502 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 505 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cs_faculty` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_subject` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cs_subject` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_course` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cs_course` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_teacher` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cs_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cs_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cs_addons` [ RunTime:0.0050s ]
+SQL: SELECT `title`,`name` FROM `cs_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cs_node` WHERE `remark` = 'index' AND `name` = 'Tags' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cs_node` WHERE `level` = 2 AND `name` = 'Tags' AND `remark` = '' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title` FROM `cs_group`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0030s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SHOW COLUMNS FROM `cs_tags` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `cs_tags`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\CS\App\Admin\Model\TagsModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cs_picture` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cs_picture` WHERE `status` = 1 AND `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: type D:\xampp\htdocs\CS\App\Common\Common\thumb.php 第 165 行.
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.001001s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 55 行.
+NOTIC: [8] Undefined index: title D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\777d8057690612381702b8931e56c94b.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-01T22:22:17+08:00 ] ::1 /cs/index.php?m=Admin&c=Comments&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\CommentsController::_initialize() should be compatible with Admin\Controller\CommonController::_initialize($dwz_db_name = '') D:\xampp\htdocs\CS\App\Admin\Controller\CommentsController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cs_role_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_id` FROM `cs_role_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_mrole_user` [ RunTime:0.0020s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 1 [ RunTime:0.0000s ]
+SQL: DELETE FROM `cs_mrole_user` WHERE `user_id` = 504 [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_role_user` WHERE ( role_id=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_teacher` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_teacher` WHERE `id` = 504 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cs_mrole_user` WHERE ( role_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_student` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 502 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_student` WHERE `id` = 505 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_faculty` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cs_faculty` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_subject` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cs_subject` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_course` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cs_course` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_teacher` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cs_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cs_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cs_addons` [ RunTime:0.0020s ]
+SQL: SELECT `title`,`name` FROM `cs_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_node` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cs_node` WHERE `remark` = 'index' AND `name` = 'Comments' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cs_node` WHERE `level` = 2 AND `name` = 'Comments' AND `remark` = '' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_group` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title` FROM `cs_group`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cs_ucenter_member` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cs_member` [ RunTime:0.0030s ]
+SQL: SELECT `nickname` FROM `cs_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ZS_ADDON_PATH - assumed 'ZS_ADDON_PATH' D:\xampp\htdocs\CS\App\Common\Controller\Addon.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `cs_avatar` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cs_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\CS\App\Common\Common\user.php 第 336 行.
+SQL: SHOW COLUMNS FROM `cs_local_comment` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `cs_local_comment`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cs_article` [ RunTime:0.0040s ]
+SQL: SELECT `title` FROM `cs_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: hassub D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 55 行.
+NOTIC: [8] Undefined index: content D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 167 行.
+NOTIC: [8] Undefined index: lite D:\xampp\htdocs\CS\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+NOTIC: [8] Undefined index: mod D:\xampp\htdocs\CS\Runtime\App\Cache\Admin\d664a5ecdcbcae675c6a48be25d036e5.php 第 245 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

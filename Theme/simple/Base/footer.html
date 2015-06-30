@@ -1,0 +1,12 @@
+<footer id="footer">
+<div class="container">
+	<div class="row hidden-xs">
+		<if condition="($cname eq 'index') AND ($aname eq 'index')">
+		{:hook('friendLink')}
+		</if>
+	</div>
+	<div class="copyright">
+		Copyright © 2014-2015 网上选课系统. <br><a href="#" rel="nofollow">{:C('WEB_SITE_ICP')}</a> {:hook('pageFooter')}
+	</div>
+</div>
+</footer>

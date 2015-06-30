@@ -1,0 +1,69 @@
+<extend name="Base/common"/>
+
+<block name="right">
+
+<div class="col-xs-12 col-md-9 main mt30">
+    <div class="panel panel-default panel-archive">
+        <div class="panel-body">
+            <!-- Nav tabs -->
+            <ul class=" nav nav-pills pb10 mb10 mt10">
+                <li class="active"><a href="{:CSU('/course/','Index/course')}">已选课程</a></li>
+                <volist name="coursed" id="vo">
+                    <li><a>{$vo.couid|getNameById='course',###}</a></li>
+                </volist>
+            </ul>
+            <div style="min-height:300px;">
+                <form action="{:U('index/course')}" method="post" id="formsearch">
+                    <div class="example-code">
+                        <div class="form-label float-left" >
+                            <label>课程名称：</label>
+                        </div>
+                        <div class="form-input col-md-2">
+                            <input type="text" value="{$_REQUEST.name}" name="name" size="10" />`
+                        </div>
+
+                        <button type="submit" class="btn medium bg-blue"><span class="button-content">
+                            <i class="glyph-icon icon-search"></i>查询</span>
+                        </button>
+
+                        <a class="btn medium bg-orange" href="javascript:clearQuery(this)">
+                            <span class="button-content"><i class="glyph-icon icon-undo"></i> 清空查询</span>
+                        </a>
+
+                    </div><!-- example-code -->
+                    <div class="divider"></div>
+                </form>
+
+                <table class="dataTable table text-left"  id="dataTables">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>课程名称</th>
+                            <th>任课老师</th>
+                            <th>所属专业</th>
+                            <th>学分</th>
+                            <th class="text-center" width="60">操作</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <volist id="vo" name="course">
+                            <tr>
+                                <td>{$vo['id']}</td>
+                                <td>{$vo['name']}</td>
+                                <td>{$vo['teaid']|getNameById='teacher',###}</td>
+                                <td>{$vo['subid']|getNameById='subject',###}</td>
+                                <td>{$vo['xuefen']}</td>
+                                <td>
+                                    {$vo['id']|showCourseStatus}
+                                </td>
+                            </tr>
+                        </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</block>
